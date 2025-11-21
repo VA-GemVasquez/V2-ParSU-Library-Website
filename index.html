@@ -22,7 +22,53 @@
 
     </nav>
   </header>
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
 
+    <div class="form-header">
+      <button class="login-btn active" onclick="showForm('login')">Login</button>
+      <button class="signup-btn" onclick="showForm('signup')">Sign Up</button>
+    </div>
+
+    <div class="form-container">
+      <form class="login-form active">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="text-link">
+          Don’t have an account? <span onclick="showForm('signup')">Sign Up</span>
+        </div>
+      </form>
+
+      <form class="signup-form">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required />
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="text-link">
+          Already have an account? <span onclick="showForm('login')">Login</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  
   <script src="script.js"></script>
   </body>
   </html>
